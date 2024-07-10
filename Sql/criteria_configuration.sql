@@ -1,0 +1,15 @@
+create table if not exists criteria_configuration(
+configuration_id Integer not null,
+configuration_owner varchar(255) null,
+active_criteria char null,
+configuration_type_id Integer null,
+configuration_type varchar(255) null,
+configuration_status varchar(255) null,
+configuration_description Integer null,
+relative_dependencies Integer null,
+parent_pom varchar(255) null,
+flush_interval Integer null,
+build_params varchar(255) null,
+status varchar(255) null,
+time_to_execute varchar(255) null,
+constraint criteria_configuration_pk primary key(configuration_id));
